@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+#printing from one up to five
+ 
+ 
+for (( i=1; i<=5; i++ ))
+do
+ 
+if [ "$i" -eq 1 ]
+then
+echo "one"
+ 
+elif [ "$i" -eq 2 ]
+then
+echo "two"
+ 
+elif [ "$i" -eq 3 ]
+then
+echo "three"
+ 
+elif [ "$i" -eq 4 ]
+then
+echo "four"
+ 
+elif [ "$i" -eq 5 ]
+then
+echo "five"
+fi
+ 
+done
+
