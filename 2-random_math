@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#bc square root
+num1=$RANDOM
+
+read -p "The first random number generated is $num1 " number
+square_root1=$(echo "$num1" | awk '{print sqrt($1)}')
+echo "The square root is $square_root1"
+ 
+num2=$RANDOM
+read -p "The second random number generated is $num2 " number
+square_root2=$(echo "$num2" | awk '{print sqrt($1)}')
+echo "The square root is $square_root2"
+ 
+addition=$(awk "BEGIN {print ($square_root1 + $square_root2)}")
+echo "The sum of their square roots is $addition"
+
